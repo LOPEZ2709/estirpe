@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url('../public/background.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.719); /* Adjust the opacity as needed */
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1,p{
+  color: #000;
+}
