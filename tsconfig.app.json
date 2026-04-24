@@ -3,7 +3,10 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
+    "module": "ESNext",
+    "outDir": "./src",
+    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true,
     "types": []
   },
   "include": [
